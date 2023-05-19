@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+
+  <div class="form container">
+<div class="contact">@Model.Value("pageTitle") @Model.Value("contactPageBody")</div>
+
+    <div class="d-flex mt-4 mb-4">
+        <input class="name" type="text" name="name" placeholder="Your Name" />
+        <input class="mail" type="text" name="name" placeholder="Your Mail"/>
+    </div>
+<textarea name="" id="" cols="30" rows="10" placeholder="Comments"></textarea>
+<button class="buttonsubmit">@Model.Value("submitButton")</button>
+</div>

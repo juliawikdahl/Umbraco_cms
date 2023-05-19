@@ -1,0 +1,10 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.StartPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_layout.cshtml";
+}
+
+<partial name="Showcase1" />
+<h1 class='featured'>@Model.Value("middleText")</h1>
+<partial name="Showcase2" />
